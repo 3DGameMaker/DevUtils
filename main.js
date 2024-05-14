@@ -15,7 +15,7 @@ function createPopup() {
 
     // Create the close button
     var closeButton = document.createElement('button');
-    closeButton.textContent = 'Close';
+    closeButton.textContent = 'X';
     closeButton.onclick = function() {
         document.body.removeChild(popupContainer);
         document.body.removeChild(overlay);
@@ -23,7 +23,7 @@ function createPopup() {
 
     // Create the content inside the popup
     var popupContent = document.createElement('div');
-    popupContent.innerHTML = '<h2>Popup Window</h2><p>This is a popup window created using JavaScript.</p>';
+    popupContent.innerHTML = '<h2>DevUtils</h2><p>A simple program for all your goofing around with code needs.</p>';
 
     // Append the close button and content to the popup container
     popupContainer.appendChild(closeButton);
